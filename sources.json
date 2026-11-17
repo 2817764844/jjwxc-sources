@@ -1,7 +1,426 @@
 {
  "version": 1,
- "updated": "2026-11-17 17:00",
+ "updated": "2026-11-17 17:42",
  "sources": [
+  {
+   "name": "m.69shu.net",
+   "site": "http://m.69shu.net",
+   "method": "GET",
+   "path": "/search/?q={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "世上还有这种好事儿",
+    "chapters": 222,
+    "match": null,
+    "when": "2026-11-17",
+    "note": "能搜到《世上还有这种好事儿》222章，待内容校验"
+   },
+   "note": "女频站，搜到《世上还有这种好事儿》222章"
+  },
+  {
+   "name": "www.yiruan.info",
+   "site": "http://www.yiruan.info",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 161,
+    "match": 0.1499,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》161章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.15（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "m.elkoparts.net",
+   "site": "http://m.elkoparts.net",
+   "method": "GET",
+   "path": "/search.php?keyWord={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 40,
+    "match": null,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》40章，待内容校验"
+   },
+   "note": "女频站，搜到《三分野》40章"
+  },
+  {
+   "name": "www.95dushu.net",
+   "site": "http://www.95dushu.net",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 129,
+    "match": null,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》129章，待内容校验"
+   },
+   "note": "女频站，搜到《三分野》129章"
+  },
+  {
+   "name": "www.zzs5.net",
+   "site": "http://www.zzs5.net",
+   "method": "GET",
+   "path": "/index.php?q={kw}",
+   "toc_sel": "dl dd a",
+   "content_sel": ".content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 161,
+    "match": 0.1493,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》161章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.15（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.changduzw.com",
+   "site": "https://www.changduzw.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 161,
+    "match": null,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》161章，待内容校验"
+   },
+   "note": "女频站，搜到《三分野》161章"
+  },
+  {
+   "name": "www.zwduxs.com",
+   "site": "http://www.zwduxs.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 161,
+    "match": 0.1499,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》161章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.15（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.mayiwsk.com",
+   "site": "https://www.mayiwsk.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 170,
+    "match": 0.1499,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》170章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.15（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.wenxuem.com",
+   "site": "https://www.wenxuem.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 42,
+    "match": 0.0463,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》42章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.05（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.lewenge.cc",
+   "site": "http://www.lewenge.cc",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 164,
+    "match": 0.0835,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》164章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.08（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "m.xhytd.com",
+   "site": "http://m.xhytd.com",
+   "method": "GET",
+   "path": "/SearchBook.php?keyword={kw}",
+   "toc_sel": "#chapterlist a",
+   "content_sel": "#chaptercontent",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 12,
+    "match": 0.1524,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》12章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.15（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.80zw.la",
+   "site": "http://www.80zw.la",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 86,
+    "match": 0.0605,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》86章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.06（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.ibiquw.info",
+   "site": "http://www.ibiquw.info",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 163,
+    "match": 0.0408,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》163章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.04（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.7zzw.com",
+   "site": "https://www.7zzw.com",
+   "method": "GET",
+   "path": "/search/?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "article",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 104,
+    "match": 0.1997,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》104章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.20（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "www.qiushu.info",
+   "site": "http://www.qiushu.info",
+   "method": "GET",
+   "path": "/search.php?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 175,
+    "match": null,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》175章，待内容校验"
+   },
+   "note": "女频站，搜到《三分野》175章"
+  },
+  {
+   "name": "格格党小说",
+   "site": "http://www.52ggd.com",
+   "method": "POST",
+   "path": "/search/",
+   "data": {
+    "searchkey": "{kw}"
+   },
+   "toc_sel": "#newlist a",
+   "content_sel": ".read-content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "女频",
+    "已验证"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 105,
+    "match": 0.9417,
+    "when": "2026-11-17",
+    "note": "女频源，内容校验通过（逐书结果可能不同，用前建议再跑一次）",
+    "baseline": "晋江第1章"
+   },
+   "note": "《勿扰飞升》168 章，内容相似度 1.0 —— 比 96读书 的 106 章更全，首选"
+  },
+  {
+   "name": "www.xxsy.net",
+   "site": "https://www.xxsy.net",
+   "method": "GET",
+   "path": "/search/{kw}",
+   "toc_sel": "dl dd a",
+   "content_sel": ".content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "女频"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 19,
+    "match": 0.1205,
+    "when": "2026-11-17",
+    "note": "能搜到《三分野》19章，待内容校验",
+    "baseline": "晋江第1章"
+   },
+   "note": "内容校验不通过：与基准相似度 0.12（晋江第1章），抓到的是别的书（可能章节定位异常，也可能是别的书，暂时禁用）（可能章节定位异常，也可能是别的书，暂禁用）"
+  },
+  {
+   "name": "52推书",
+   "site": "https://www.52tuishu.com",
+   "method": "GET",
+   "path": "/search.php?q={kw}",
+   "toc_sel": ".mulu a",
+   "content_sel": "article",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "女频",
+    "已验证"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 174,
+    "match": 0.7725,
+    "when": "2026-11-17",
+    "note": "女频源，内容校验通过（逐书结果可能不同，用前建议再跑一次）",
+    "baseline": "晋江第1章"
+   },
+   "note": "《三分野》第1章校验 0.772；逐书验证，个别书章节定位会偏"
+  },
+  {
+   "name": "格格党阅读书屋",
+   "site": "https://www.ax81.com",
+   "method": "GET",
+   "path": "/search/?searchkey={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "女频",
+    "已验证"
+   ],
+   "verified": {
+    "kw": "三分野",
+    "chapters": 14,
+    "match": 0.9921,
+    "when": "2026-11-17",
+    "note": "女频源，内容校验通过（逐书结果可能不同，用前建议再跑一次）",
+    "baseline": "晋江第1章"
+   },
+   "note": "《三分野》第1章校验 0.992；逐书验证，个别书章节定位会偏"
+  },
   {
    "name": "90读书",
    "site": "https://www.90dushu.com",
@@ -369,13 +788,10 @@
   "note": "match<0.55 = 搜索命中但内容是别的书，已禁用；未校验 = 该站没有这本书的样本",
   "female_round": {
    "when": "2026-11-17",
-   "result": "女频专项搜索未找到能搜到晋江书的新站",
-   "tried": [
-    "51 个男频笔趣阁域名（快筛 12 可达，5 功能可用但无女频书）",
-    "96读书 兄弟站 3 个（搜索接口不通）",
-    "bqg9.xyz / biquge5200.cc（女频书都搜不到）"
-   ],
-   "baseline": "《老婆粉了解一下[娱乐圈]》jjwxc novelid=3953941 第1章 3375 字"
+   "method": "从 legado 女频书源 JSON（女频耽美64 / 女频60 / 女生耽美49 / 耽美BL）提取 160 个域名",
+   "pipeline": "160 域名 → 79 可达 → 19 个能搜到女频书 → 3 个通过内容校验",
+   "best": "52ggd.com（格格党）：搜《勿扰飞升》168 章，相似度 1.0",
+   "lesson": "校验只抓第 1 章；目录分页/倒序的站会抓错章导致低分，同一站在不同书上结果可能不同。使用前建议对该书单独跑 verify_sources.py"
   }
  }
 }

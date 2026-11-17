@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """书源内容校验 —— 判断某个源下到的到底是不是这本书。
 
 原理：
@@ -49,7 +49,17 @@ def clean(t):
 
 
 def ngram_sim(a, b, n=2):
-    """2-gram Dice 系数：对广告前缀/错字/段落差异都不敏感"""
+    """2-gram 相似度，取 Dice 与「包含度」的较大值。
+
+    为什么要两个指标：
+      · Dice = 2|A∩B|/(|A|+|B|)，两队长度差太多会被严重压低 ——
+        镜像站常把一章拆成分页（只给第一页几百字），Dice 只有 0.34，
+        但那段内容其实完全出自同一章。
+      · 包含度 = |A∩B| / min(|A|,|B|)，短的一方被长的一方覆盖就算高，
+        正好对上「分页/节选」的情况。
+
+    短文本（<150 汉字）容易靠常见短语蒙混，这种只认 Dice。
+    """
     A, B = clean(a), clean(b)
     if len(A) < n or len(B) < n:
         return 0.0
@@ -57,7 +67,12 @@ def ngram_sim(a, b, n=2):
     gb = {B[i:i + n] for i in range(len(B) - n + 1)}
     if not ga or not gb:
         return 0.0
-    return round(2 * len(ga & gb) / (len(ga) + len(gb)), 4)
+    inter = len(ga & gb)
+    dice = 2 * inter / (len(ga) + len(gb))
+    if min(len(A), len(B)) < 150:
+        return round(dice, 4)
+    contain = inter / min(len(ga), len(gb))
+    return round(max(dice, contain), 4)
 
 
 # ---------------------------------------------------------------------------
@@ -165,7 +180,8 @@ def main():
 
     srcs = [s for s in bs.load_sources(args.path) if s.get("enabled", True)]
     if args.only:
-        srcs = [s for s in srcs if args.only in s["name"] or args.only in s["site"]]
+        srcs = [s for s in srcs if args.only in s["name"] or args.only in s["site"]
+                or args.only in " ".join(s.get("tags") or [])]
     if not srcs:
         print("没有要校验的源")
         return
@@ -269,5 +285,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
