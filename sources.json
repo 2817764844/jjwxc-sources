@@ -1,0 +1,190 @@
+{
+ "version": 1,
+ "updated": "2026-11-17 15:25",
+ "sources": [
+  {
+   "name": "panxs",
+   "site": "https://panxs.cc",
+   "method": "GET",
+   "path": "/search/{kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "article",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "蹭标题",
+    "已禁用"
+   ],
+   "verified": {
+    "kw": "勿扰飞升",
+    "chapters": 22,
+    "match": 0.0
+   },
+   "note": "搜得到但内容对不上（相似度 0.00，返回的是别的书），别用"
+  },
+  {
+   "name": "xbiquwk",
+   "site": "http://www.xbiquwk.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "蹭标题",
+    "已禁用"
+   ],
+   "verified": {
+    "kw": "勿扰飞升",
+    "chapters": 41,
+    "match": 0.0
+   },
+   "note": "搜得到但内容对不上（相似度 0.00，返回的是别的书），别用"
+  },
+  {
+   "name": "biquges",
+   "site": "https://www.biquges.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "蹭标题",
+    "已禁用"
+   ],
+   "verified": {
+    "kw": "勿扰飞升",
+    "chapters": 50,
+    "match": 0.01
+   },
+   "note": "搜得到但内容对不上（相似度 0.01，返回的是别的书），别用"
+  },
+  {
+   "name": "96读书",
+   "site": "https://www.96dushu.com",
+   "method": "GET",
+   "path": "/modules/article/search.php?searchkey={kw}",
+   "toc_sel": "#newlist a",
+   "content_sel": ".read-content",
+   "delay": 0.8,
+   "enabled": true,
+   "tags": [
+    "实测可用"
+   ],
+   "verified": {
+    "kw": "勿扰飞升",
+    "chapters": 106,
+    "when": "2026-11-17"
+   },
+   "note": "实测可用：106/158 章（该站未收录 101-152）"
+  },
+  {
+   "name": "和图书",
+   "site": "https://www.hetushu.com",
+   "method": "GET",
+   "path": "/search/?keyword={kw}",
+   "toc_sel": "#dir dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "出版/名著"
+   ]
+  },
+  {
+   "name": "笔趣阁info",
+   "site": "https://www.bqg.info",
+   "method": "GET",
+   "path": "/search/?searchkey={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": []
+  },
+  {
+   "name": "第八中文网",
+   "site": "https://www.d8zw.com",
+   "method": "GET",
+   "path": "/search.php?q={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.2,
+   "enabled": true,
+   "tags": []
+  },
+  {
+   "name": "小书斋",
+   "site": "https://xszj.org",
+   "method": "GET",
+   "path": "/s?keyword={kw}",
+   "toc_sel": ".chapter-list a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": []
+  },
+  {
+   "name": "云轩阁",
+   "site": "https://www.yunxuange.com",
+   "method": "GET",
+   "path": "/search.php?q={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": []
+  },
+  {
+   "name": "全本小说",
+   "site": "https://quanben5.com",
+   "method": "GET",
+   "path": "/search.html?keyword={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.2,
+   "enabled": true,
+   "tags": [
+    "完本全"
+   ]
+  },
+  {
+   "name": "txt520",
+   "site": "https://www.txt520.com",
+   "method": "POST",
+   "path": "/e/search/index.php",
+   "data": {
+    "keyboard": "{kw}",
+    "show": "title",
+    "classid": "0"
+   },
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": []
+  },
+  {
+   "name": "101看书",
+   "site": "https://www.101kks.com",
+   "method": "POST",
+   "path": "/search",
+   "data": {
+    "searchkey": "{kw}"
+   },
+   "toc_sel": "#catalog a",
+   "content_sel": "#content",
+   "delay": 1.5,
+   "enabled": true,
+   "tags": []
+  }
+ ],
+ "removed": [],
+ "remote": [
+  "https://raw.githubusercontent.com/2817764844/jjwxc-sources/main/sources.json",
+  "https://cdn.jsdelivr.net/gh/2817764844/jjwxc-sources@main/sources.json"
+ ]
+}
