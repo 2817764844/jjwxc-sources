@@ -1,7 +1,67 @@
 {
  "version": 1,
- "updated": "2026-11-17 16:29",
+ "updated": "2026-11-17 17:00",
  "sources": [
+  {
+   "name": "90读书",
+   "site": "https://www.90dushu.com",
+   "method": "GET",
+   "path": "/search/?searchkey={kw}",
+   "toc_sel": "#newlist a",
+   "content_sel": ".read-content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "96读书兄弟站",
+    "待适配"
+   ],
+   "verified": {
+    "kw": null,
+    "match": null,
+    "note": "搜索接口未打通，未验证"
+   },
+   "note": "96读书同 CMS 兄弟站，首页可达；搜索接口 /search/ 目前不通，在 96读书 挂掉时可作为备用研究方向"
+  },
+  {
+   "name": "30读书",
+   "site": "https://www.30dushu.com",
+   "method": "GET",
+   "path": "/search/?searchkey={kw}",
+   "toc_sel": "#newlist a",
+   "content_sel": ".read-content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "96读书兄弟站",
+    "待适配"
+   ],
+   "verified": {
+    "kw": null,
+    "match": null,
+    "note": "搜索接口未打通，未验证"
+   },
+   "note": "96读书同 CMS 兄弟站，首页可达；搜索接口 /search/ 目前不通，在 96读书 挂掉时可作为备用研究方向"
+  },
+  {
+   "name": "28读书",
+   "site": "https://www.28dushu.com",
+   "method": "GET",
+   "path": "/search/?searchkey={kw}",
+   "toc_sel": "#newlist a",
+   "content_sel": ".read-content",
+   "delay": 1.0,
+   "enabled": false,
+   "tags": [
+    "96读书兄弟站",
+    "待适配"
+   ],
+   "verified": {
+    "kw": null,
+    "match": null,
+    "note": "搜索接口未打通，未验证"
+   },
+   "note": "96读书同 CMS 兄弟站，首页可达；搜索接口 /search/ 目前不通，在 96读书 挂掉时可作为备用研究方向"
+  },
   {
    "name": "手机小说",
    "site": "https://shoujixs.net",
@@ -306,6 +366,16 @@
   "last_run": "2026-11-17 16:29",
   "target_book": "勿扰飞升 (jjwxc novelid=3433838)",
   "summary": "17 条源 / 14 启用。目标书上只有 96读书 有货（match 0.995）；5 个新源用《斗罗大陆》《诡秘之主》验证过搜索+目录+正文可用，但未做内容校验（这些站没有目标书样本）",
-  "note": "match<0.55 = 搜索命中但内容是别的书，已禁用；未校验 = 该站没有这本书的样本"
+  "note": "match<0.55 = 搜索命中但内容是别的书，已禁用；未校验 = 该站没有这本书的样本",
+  "female_round": {
+   "when": "2026-11-17",
+   "result": "女频专项搜索未找到能搜到晋江书的新站",
+   "tried": [
+    "51 个男频笔趣阁域名（快筛 12 可达，5 功能可用但无女频书）",
+    "96读书 兄弟站 3 个（搜索接口不通）",
+    "bqg9.xyz / biquge5200.cc（女频书都搜不到）"
+   ],
+   "baseline": "《老婆粉了解一下[娱乐圈]》jjwxc novelid=3953941 第1章 3375 字"
+  }
  }
 }
