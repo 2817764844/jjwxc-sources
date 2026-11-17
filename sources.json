@@ -1,7 +1,112 @@
 {
  "version": 1,
- "updated": "2026-11-17 16:02",
+ "updated": "2026-11-17 16:29",
  "sources": [
+  {
+   "name": "手机小说",
+   "site": "https://shoujixs.net",
+   "method": "GET",
+   "path": "/?s={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "本次新增"
+   ],
+   "verified": {
+    "kw": "诡秘之主",
+    "chapters": 92,
+    "match": null,
+    "note": "功能验证：用《诡秘之主》拉到 92 章，未做内容校验（该站没有目标书样本）",
+    "when": "2026-11-17"
+   },
+   "note": "功能可用（《诡秘之主》92章），内容未校验"
+  },
+  {
+   "name": "全本小说io",
+   "site": "https://quanben.io",
+   "method": "GET",
+   "path": "/index.php?keywords={kw}",
+   "toc_sel": "a[href$='.html']",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "本次新增"
+   ],
+   "verified": {
+    "kw": "斗罗大陆",
+    "chapters": 48,
+    "match": null,
+    "note": "功能验证：用《斗罗大陆》拉到 48 章，未做内容校验（该站没有目标书样本）",
+    "when": "2026-11-17"
+   },
+   "note": "功能可用（《斗罗大陆》48章），内容未校验"
+  },
+  {
+   "name": "香书小说",
+   "site": "https://ibiquge.la",
+   "method": "GET",
+   "path": "/?s={kw}",
+   "toc_sel": "#list dd a",
+   "content_sel": "#content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "本次新增"
+   ],
+   "verified": {
+    "kw": "斗罗大陆",
+    "chapters": 1815,
+    "match": null,
+    "note": "功能验证：用《斗罗大陆》拉到 1815 章，未做内容校验（该站没有目标书样本）",
+    "when": "2026-11-17"
+   },
+   "note": "功能可用（《斗罗大陆》1815章），内容未校验"
+  },
+  {
+   "name": "顶点小说",
+   "site": "https://biqubook.com",
+   "method": "GET",
+   "path": "/?s={kw}",
+   "toc_sel": ".listmain dd a",
+   "content_sel": ".content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "本次新增"
+   ],
+   "verified": {
+    "kw": "斗罗大陆",
+    "chapters": 715,
+    "match": null,
+    "note": "功能验证：用《斗罗大陆》拉到 715 章，未做内容校验（该站没有目标书样本）",
+    "when": "2026-11-17"
+   },
+   "note": "功能可用（《斗罗大陆》715章），内容未校验"
+  },
+  {
+   "name": "566小说",
+   "site": "https://biqu.la",
+   "method": "GET",
+   "path": "/?s={kw}",
+   "toc_sel": ".chapter-list a",
+   "content_sel": ".content",
+   "delay": 1.0,
+   "enabled": true,
+   "tags": [
+    "本次新增"
+   ],
+   "verified": {
+    "kw": "斗罗大陆",
+    "chapters": 108,
+    "match": null,
+    "note": "功能验证：用《斗罗大陆》拉到 108 章，未做内容校验（该站没有目标书样本）",
+    "when": "2026-11-17"
+   },
+   "note": "功能可用（《斗罗大陆》108章），内容未校验"
+  },
   {
    "name": "panxs",
    "site": "https://panxs.cc",
@@ -198,7 +303,9 @@
  "verify": {
   "method": "抓晋江官方免费章当基准，与各源第1章做 2-gram Dice 相似度比对",
   "threshold": 0.55,
-  "note": "match < 0.55 判为「搜索命中但内容是别的书」，已禁用；未校验=该站没有这本书的样本",
-  "last_run": "2026-11-17"
+  "last_run": "2026-11-17 16:29",
+  "target_book": "勿扰飞升 (jjwxc novelid=3433838)",
+  "summary": "17 条源 / 14 启用。目标书上只有 96读书 有货（match 0.995）；5 个新源用《斗罗大陆》《诡秘之主》验证过搜索+目录+正文可用，但未做内容校验（这些站没有目标书样本）",
+  "note": "match<0.55 = 搜索命中但内容是别的书，已禁用；未校验 = 该站没有这本书的样本"
  }
 }
