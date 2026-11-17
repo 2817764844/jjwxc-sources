@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-17 15:36",
+ "updated": "2026-11-17 15:39",
  "sources": [
   {
    "name": "panxs",
@@ -184,9 +184,13 @@
  ],
  "removed": [],
  "remote": [
+  "https://cdn.jsdelivr.net/gh/2817764844/jjwxc-sources@main/sources.json",
+  "https://testingcf.jsdelivr.net/gh/2817764844/jjwxc-sources@main/sources.json",
+  "https://fastly.jsdelivr.net/gh/2817764844/jjwxc-sources@main/sources.json",
   "https://raw.githubusercontent.com/2817764844/jjwxc-sources/main/sources.json",
-  "https://cdn.jsdelivr.net/gh/2817764844/jjwxc-sources@main/sources.json"
+  "https://gh-proxy.com/https://raw.githubusercontent.com/2817764844/jjwxc-sources/main/sources.json",
+  "https://gcore.jsdelivr.net/gh/2817764844/jjwxc-sources@main/sources.json"
  ],
- "last_sync": "2026-11-17 15:34",
+ "last_sync": "2026-11-17 15:39",
  "remote_updated": "2026-11-17 15:25"
 }
